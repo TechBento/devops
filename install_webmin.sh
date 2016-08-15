@@ -9,7 +9,7 @@ sudo mkdir -P /usr/shared/techbento
 sudo chmod 777 /usr/shared/techbento
 wget -N  http://prdownloads.sourceforge.net/webadmin/webmin-1.801-1.noarch.rpm -P /usr/shared/techbento
 sudo yum -y install perl perl-Net-SSLeay openssl perl-IO-Tty
-sudo rpm -U /home/ec2-user/webmin-1.801-1.noarch.rpm
+sudo rpm -U /usr/shared/techbento/webmin-1.801-1.noarch.rpm
 echo "Please specify WebMin root password:"
 read varWebMinPassword
 /usr/libexec/webmin/changepass.pl /etc/webmin root $varWebMinPassword
