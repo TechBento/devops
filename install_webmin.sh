@@ -5,8 +5,8 @@
 # ----------------------------------
 echo "================================================================="
 echo "Install WebMin management GUI for administering the server."
-sudo mkdir -p /usr/shared/techbento
-sudo chmod 777 -p /usr/shared/techbento
+sudo mkdir -P /usr/shared/techbento
+sudo chmod 777 /usr/shared/techbento
 wget -N  http://prdownloads.sourceforge.net/webadmin/webmin-1.801-1.noarch.rpm -P /usr/shared/techbento
 sudo yum -y install perl perl-Net-SSLeay openssl perl-IO-Tty
 sudo rpm -U /home/ec2-user/webmin-1.801-1.noarch.rpm
