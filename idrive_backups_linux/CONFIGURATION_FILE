@@ -1,0 +1,17 @@
+USERNAME = <your IDrive account user name>
+PASSWORD = <your IDrive account password> 
+PVTKEY   = <Your IDrive account encryption key if any>  
+EMAILADDRESS = sample1@test.com, sample2@test.com, sample3@test.com (Note: Email ids could be one or more seprated by comma) 
+BACKUPSETFILEPATH = ./BackupsetFile.txt 
+RESTORESETFILEPATH = ./RestoresetFile.txt
+FULLEXCLUDELISTFILEPATH = ./FullExcludeList.txt
+PARTIALEXCLUDELISTFILEPATH = ./PartialExcludeList.txt
+REGEXEXCLUDEFILEPATH = ./RegexExcludeList.txt
+RESTORELOCATION = <location in your machine where data needs to be restored>
+BACKUPLOCATION = <location in your IDrive account where data needs to be backed up>
+RESTOREFROM = <location in your IDrive account from where data needs to be restored. Note: This field should be empty if you are providing full file(s)/folder(s) path in RestoresetFile.txt>
+RETAINLOGS = <YES/NO>
+PROXY = <Proxy user name>:<Proxy Password>@<Proxy IP Address>:<Proxy Port>
+BWTHROTTLE = <Number between 1 to 100 to restrict the bandwidth usage>
+BACKUPTYPE = <Mirror/Relative>
+
