@@ -4,6 +4,7 @@ REM this script uses hard paths and file names, update as needed.
 @echo off
 setlocal
 cd /d %~dp0
+set antpath
 
 mkdir C:\ops\temp
 mkdir C:\ops\bin
@@ -29,5 +30,10 @@ cscript //nologo %vbs%
 if exist %vbs% del /f /q %vbs%
 
 :EnvSet
-setx ANT_HOME="C:\ops\bin\apache-ant-1.9.7"
-setx PATH "%PATH%;%ANT_HOME%\bin"
+if defined ANT_HOME (
+  echo "Doing nothing because another ANT installation is already on this system."
+  ) else (
+  setx ANT_HOME "C:\ops\bin\apache-ant-1.9.7" /m
+  setx PATH "%PATH%;C:\ops\bin\apache-ant-1.9.7\bin" /m
+  )
+
